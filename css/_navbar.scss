@@ -1,0 +1,230 @@
+.navbar {
+    padding: 8px 16px;
+    flex-wrap: wrap;
+    
+
+    @include breakpoint-up(medium) {
+        margin: 20px 100px 0px 100px;
+
+    }
+
+
+
+
+    &__brand {
+
+        a {
+
+            color: black;
+            font-size: 2rem;
+
+            &:hover {
+                color: red;
+            }
+
+        }
+
+        >span {
+            color: red;
+        }
+
+        
+    }
+
+    &__links {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    
+        width: 75%;
+    
+        li {
+            padding: 8px;
+    
+            a {
+                color: black;
+                font-size: 1rem;
+                &:hover {
+                    color: red;
+                }
+                &.active{
+                    color: red;
+                }
+            }
+        }
+    
+    
+    }
+    
+    &__menu {
+    
+        display: none;
+        cursor: pointer;
+    
+        >div {
+            background-color: black;
+            width: 30px;
+            height: 3px;
+    
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+    
+        }
+    }
+    
+    
+    
+    @media screen and (max-width: 1219px) {
+
+    
+        &__links {
+            flex-basis: 100%;
+            
+            flex-direction: column;
+            justify-content: left;
+            padding-left: 0px;
+            display: none;
+            transition: transform 0.5s ease-in;
+
+            li{
+                padding: 8px 0;
+            }
+        }
+    
+        &__menu {
+            display: block;
+        }
+    }
+    
+    
+}
+
+
+
+
+
+.nav-active {
+    display: flex ;
+    
+
+}
+
+/*.navbar{
+
+    padding: 8px 16px;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    @include breakpoint-up(medium){
+        margin: 20px 100px 0px 100px;
+        
+    }
+
+    @include breakpoint-up(large){
+        margin: 20px 100px 0px 100px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        
+       
+    }
+    
+    
+
+    &__brand{
+        color: black;
+        font-size: 2rem;
+        &:hover{
+            color: red;
+        }
+
+        >span{
+            color: red;
+        }
+
+    }
+
+    &__menu{
+        >span{
+            background-color: black;
+            display: block;
+            width: 30px;
+            height: 3px;
+
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+
+
+        }
+
+    }
+
+    
+
+
+    &__links{
+        
+        
+        
+            flex-basis: 100%;
+        
+        
+       
+            a{
+                color: black;
+                padding: 8px 0px;
+                margin: 0px 3.6px;
+                font-size: 0.9rem;
+                display: block;
+
+                &:hover{
+                    color: red;
+                }
+                &:active{
+                    color: red;
+                }
+
+                @include breakpoint-up(large){
+                    display: inline 
+                }
+
+            
+
+            
+            }
+
+        
+        
+
+        
+    }
+
+    &__links2{
+        
+        
+       
+        a{
+            color: black;
+            padding: 8px 0px;
+            margin: 0px 3.6px;
+            font-size: 0.9rem;
+            
+
+            &:hover{
+                color: red;
+            }
+            &:active{
+                color: red;
+            }
+
+            
+
+            
+        }
+
+        
+    }
+
+   
+}*/

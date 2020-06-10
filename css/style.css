@@ -1,0 +1,294 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  position: relative;
+}
+
+h1, h2, h3, h4 {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 64em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 63.9375em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  padding: 8px 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 39.9375em) {
+  .navbar {
+    margin: 20px 100px 0px 100px;
+  }
+}
+
+.navbar__brand a {
+  color: black;
+  font-size: 2rem;
+}
+
+.navbar__brand a:hover {
+  color: red;
+}
+
+.navbar__brand > span {
+  color: red;
+}
+
+.navbar__links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+}
+
+.navbar__links li {
+  padding: 8px;
+}
+
+.navbar__links li a {
+  color: black;
+  font-size: 1rem;
+}
+
+.navbar__links li a:hover {
+  color: red;
+}
+
+.navbar__links li a.active {
+  color: red;
+}
+
+.navbar__menu {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar__menu > div {
+  background-color: black;
+  width: 30px;
+  height: 3px;
+}
+
+.navbar__menu > div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1219px) {
+  .navbar__links {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-left: 0px;
+    display: none;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .navbar__links li {
+    padding: 8px 0;
+  }
+  .navbar__menu {
+    display: block;
+  }
+}
+
+.nav-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*.navbar{
+
+    padding: 8px 16px;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    @include breakpoint-up(medium){
+        margin: 20px 100px 0px 100px;
+        
+    }
+
+    @include breakpoint-up(large){
+        margin: 20px 100px 0px 100px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        
+       
+    }
+    
+    
+
+    &__brand{
+        color: black;
+        font-size: 2rem;
+        &:hover{
+            color: red;
+        }
+
+        >span{
+            color: red;
+        }
+
+    }
+
+    &__menu{
+        >span{
+            background-color: black;
+            display: block;
+            width: 30px;
+            height: 3px;
+
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+
+
+        }
+
+    }
+
+    
+
+
+    &__links{
+        
+        
+        
+            flex-basis: 100%;
+        
+        
+       
+            a{
+                color: black;
+                padding: 8px 0px;
+                margin: 0px 3.6px;
+                font-size: 0.9rem;
+                display: block;
+
+                &:hover{
+                    color: red;
+                }
+                &:active{
+                    color: red;
+                }
+
+                @include breakpoint-up(large){
+                    display: inline 
+                }
+
+            
+
+            
+            }
+
+        
+        
+
+        
+    }
+
+    &__links2{
+        
+        
+       
+        a{
+            color: black;
+            padding: 8px 0px;
+            margin: 0px 3.6px;
+            font-size: 0.9rem;
+            
+
+            &:hover{
+                color: red;
+            }
+            &:active{
+                color: red;
+            }
+
+            
+
+            
+        }
+
+        
+    }
+
+   
+}*/
+.intro {
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
