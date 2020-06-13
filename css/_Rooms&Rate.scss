@@ -1,0 +1,146 @@
+.roomsrate {
+    text-align: center;
+    margin-top: 48px;
+    padding: 0 2rem;
+
+    @include breakpoint-up(large) {
+        margin-top: 149px;
+    }
+
+    &__header {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 107.4%;
+    }
+
+    &__info {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: capitalize;
+
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__grid {
+
+
+        @include breakpoint-up(large) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 76px;
+        }
+
+    }
+
+    .show {
+        margin-top: 3rem;
+
+        @include breakpoint-up(medium) {
+            max-width: 557px;
+            margin: 0 auto;
+            margin-top: 3rem;
+        }
+
+        &__grid {
+
+            &-img {
+                img {
+                    width: 100%;
+                    vertical-align: middle;
+                }
+            }
+
+            &-info {
+                text-align: left;
+                background-color: #DD383A;
+                padding: 30px 24px;
+                border-radius: 0 0 8px 8px;
+
+                .head {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 27px;
+                    margin-bottom: 25px;
+
+                    /* identical to box height */
+
+                    color: #FFFFFF;
+                }
+
+                .info__grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+
+                    &-left {
+                        >div {
+                            margin-bottom: 16px;
+                        }
+
+                        img {
+                            margin-right: 8px;
+
+                        }
+
+                        span {
+                            font-size: 12px;
+                            line-height: 18px;
+
+                            /* identical to box height */
+
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    &-right {
+                        .cost {
+
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 36px;
+
+                            /* identical to box height */
+
+                            color: #FFFFFF;
+                        }
+
+                        .rate {
+                            font-weight: normal;
+                            font-size: 12px;
+                            line-height: 18px;
+
+                            /* identical to box height */
+
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+
+                .room-btn {
+                    background: #0A223D;
+                    border-radius: 4px;
+                    border: none;
+                    width: 95%;
+                    height: 40px;
+                    padding: 0;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .see-all{
+        border: none;
+        width: 239px;
+        height: 50px;
+        margin-top: 56px;
+        color: #DD383A;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        background: #F5FAFE;
+        border-radius: 4px;
+    }
+
+
+}

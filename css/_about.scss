@@ -1,0 +1,39 @@
+.about{
+    text-align: center;
+    padding: 32px;
+    @include breakpoint-up(large){
+        padding: 0 208px;
+    }
+    
+    &__header{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 107.4%;
+        color: #0A223D;
+        margin-bottom: 36px;
+        span{
+            color: #DD383A;
+            font-weight: 500;
+        }
+    }
+
+    .com{
+        color: #0A223D;
+    }
+
+    &__info{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 204.6%;
+
+        /* or 37px */
+
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 69px;
+
+        @include breakpoint-up(large){
+            text-align: left;
+        }
+    }
+}

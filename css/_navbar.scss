@@ -22,11 +22,11 @@
                 color: red;
             }
 
+            >span {
+                color: red;
+            }
         }
 
-        >span {
-            color: red;
-        }
 
         
     }
@@ -84,8 +84,9 @@
             flex-direction: column;
             justify-content: left;
             padding-left: 0px;
-            display: none;
-            transition: transform 0.5s ease-in;
+            overflow: hidden; // Hide the element content, while height = 0
+            height: 0; opacity: 0;
+            transition: height 0ms 400ms, opacity 900ms 0ms;
 
             li{
                 padding: 8px 0;
@@ -105,9 +106,17 @@
 
 
 .nav-active {
-    display: flex ;
+    height: auto; opacity: 1;
+    transition: height 0ms 400ms, opacity 900ms 0ms;
+
+
     
 
+}
+
+@keyframes fadeIn {
+    from { display:none; }
+      to { display: flex; }
 }
 
 /*.navbar{

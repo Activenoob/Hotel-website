@@ -1,0 +1,61 @@
+.services {
+
+    &__grid {
+
+        @include breakpoint-up(large) {
+            display: flex;
+            margin-left: 59px;
+            margin-right: 619px;
+
+
+        }
+
+
+        .service__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            &-img {
+                width: 96px;
+                height: 96px;
+                border: 2px solid #DD383A;
+                border-radius: 50%;
+                margin-bottom: 22px;
+                margin-top: 30px;
+
+            }
+
+            &-header {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                margin-bottom: 5px;
+
+                /* identical to box height */
+                text-transform: capitalize;
+
+
+            }
+
+            &-info {
+                max-width: 202px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 15px;
+                text-align: center;
+
+                color: rgba(0, 0, 0, 0.5);
+            }
+
+
+        }
+    }
+    
+}
