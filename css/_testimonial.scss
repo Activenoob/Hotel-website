@@ -1,0 +1,94 @@
+.testimonial{
+    padding: 2rem;
+    margin-bottom: 70px;
+    @include breakpoint-up(large){
+        padding: 0;
+    }
+    &__head{
+        text-align: center;
+
+        &-header{
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 107.4%;
+
+            /* identical to box height, or 39px */
+            text-transform: uppercase;
+
+            color: #0A223D;
+            margin-bottom: 6px;
+
+        }
+
+        &-info{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+
+            /* identical to box height */
+            text-align: center;
+            text-transform: capitalize;
+
+            color: rgba(0, 0, 0, 0.5);
+
+        }
+    }
+
+    &__grid{
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 80px;
+
+        @include breakpoint-up(large){
+            margin: 80px  158px 0 158px;
+        }
+
+        @include breakpoint-up(large){
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 47px;
+        }
+
+        &-info{
+            text-align: center;
+            padding: 0 35px 35px 35px;
+            background: #F5FAFE;
+            border-radius: 8px;
+            
+    
+            img{
+                transform: translateY(-45%);
+                
+    
+            }
+    
+            .name{
+                font-family: Muli;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 14px;
+                
+    
+                /* identical to box height */
+    
+                color: #EC1F46;
+            }
+            .ratings{
+                margin-bottom: 32px;
+            }
+    
+            .note{
+                font-family: Muli;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 193%;
+                margin-bottom: 52px;
+                color: #333333;
+            }
+        }
+    }
+
+}
