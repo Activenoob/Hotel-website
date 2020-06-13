@@ -1,0 +1,136 @@
+.footer{
+    text-align: center;
+    margin-top: 34px;
+    padding: 32px;
+    background: #0A223D;
+    border-radius: 20px 20px 0px 0px;
+    @include breakpoint-up(large){
+        padding-left: 129px;
+        padding-right: 129px;
+        padding-top: 84px;
+
+    }
+
+    &__grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include breakpoint-up(large){
+            display: grid;
+            grid-template-columns: repeat(3,1fr) auto;
+            text-align: left;
+        }
+
+        &-item{
+            font-size: 14px;
+            font-weight: normal;
+            color: white;
+
+
+            h3{
+                font-weight: 600;
+                line-height: 161.3%;
+                color: rgba(255, 255, 255, 0.69);
+                margin-bottom: 8.13px;
+            }
+            ul{
+                margin-bottom: 16px;
+            }
+
+            li{
+                margin-bottom: 8.13px;
+
+            }
+        }
+
+        &-signup{
+            font-size: 14px;
+            line-height: 161.3%;
+            color: white;
+
+            .news{
+                font-weight: 600;
+                color: rgba(255, 255, 255, 0.69);
+                margin-bottom: 8.28px;
+            }
+
+            .inp{
+
+                @include breakpoint-up(large){
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 12px;
+                    background-color: white;
+                    align-items: center;
+                    border-radius: 5px;
+                    max-width: 449px;
+                    height: 70px;
+                }
+                
+
+                input{
+                    width: 100%;
+                    height: 70px;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 21px;
+                    color: #C4C4C4;
+                    margin-bottom: 10px;
+
+                @include breakpoint-up(large){
+                    margin-bottom: 0;
+                }
+
+                }
+
+                .sup-btn{
+                    width: 122px;
+                    height: 49.96px;
+                    background: #DD383A;
+                    border-radius: 5px;
+                    border: none;
+                    color: white;
+                }
+            }
+            .keep{
+                font-weight: 500;
+                color: rgba(255, 255, 255, 0.69);
+                margin-top: 34.42px;
+                margin-bottom: 11.85px;
+            }
+
+            > span:not(:last-child){
+                margin-right: 1rem;
+            }
+            .location{
+                font-size: 11px;
+                font-weight: normal;
+                margin-bottom: 8px;
+                img{
+                    margin-right: 0.5rem;
+                    vertical-align: middle;
+                }
+
+                @include breakpoint-up(large){
+                    font-size: 14px;
+                }
+
+
+                
+            }
+        }
+
+    }
+
+    &__disclaimer{
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+        margin-top: 3rem;
+
+    }
+
+
+   
+}
